@@ -1,0 +1,69 @@
+observer> clear-all
+observer> create-turtles 100
+observer> clear-all
+observer> create-turtles 100
+turtles> forward 5
+turtles> back 5
+observer> ask turtles [forward 5]
+observer> ask turtles [right random 90]
+observer> ask turtles [repeat 4[fd 10]]
+observer> ask turtles [set color blue]
+observer> ask turtles [set xcor random-xcor set ycor random-ycor]
+observer> ask turtles [repeat 4[fd 10]]
+
+observer> crt 100
+observer> ask turtles [set color blue set size 2]
+observer> ask turtles [pen-down]
+observer> ask turtles [repeat 4 [rt 90 fd 10]]
+observer> clear-drawing
+observer> ask turtles [repeat 4 [rt 90 fd 10]]
+observer> ask turtles [die]
+
+; see image 
+
+; patches
+
+observer> ask patches [set pcolor pxcor * pycor]
+; see image
+observer> ask patches [set pcolor pxcor - pycor]
+observer> ask patches [set pcolor pxcor / pycor]
+observer> ask patches [set pcolor pxcor + pycor]
+observer> ask patches [set pcolor pxcor + pycor * 2]
+
+; see image
+observer> ask patches [set pcolor pxcor * 2 + pycor * 2]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> show new-seed
+observer: -1298367761
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random pcolor]
+observer> ask patches [set pcolor random 100]
+observer> ask patches [set pcolor random 100]
+observer> ask patches [set pcolor random 100]
+observer> ask patches [set pcolor random 100]
+observer> clear-all
+observer> ask patches [set pcolor pxcor * pycor]
+observer> crt 100
+observer> ask turtles [setxy random-xcor random-ycor]
+observer> ask turtles [set pcolor color]
+observer> ask patches [set pcolor black]
+; facexy paches
+observer> ask turtles [facexy pxcor pycor]
+; links with
+observer> ask turtles [create-link-with one-of other turtles]
+; link to
+observer> ca
+observer> crt 5
+observer> ask turtles [create-link-to one-of other turtles]
+observer> ask turtles [ fd 10]
+observer> ask turtles [setxy random-xcor random-ycor]
+observer> ask turtles [setxy random-xcor / 2 random-ycor / 2]
+
